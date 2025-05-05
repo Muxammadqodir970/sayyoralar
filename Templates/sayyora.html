@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>{{ info["sayyora_nomi"] }}</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     <div class="container">
+         <h1>{{ info["sayyora_nomi"] }}</h1>
+         <p><strong>Joylashuvi:</strong> {{ info["sayyora_joylashuvi"] }}</p>
+         <p><strong>Haqida:</strong> {{ info["sayyora_haqida"] }}</p>
+         <br>
+         <a href="{{ url_for('index') }}">Bosh sahifaga qaytish</a>
+     </div>
+</body>
+</html>
